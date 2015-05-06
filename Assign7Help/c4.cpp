@@ -14,12 +14,17 @@
 #include <iostream>
 using namespace std;
 
+extern "C" long c4(long);
 extern "C" long c5(long);
-extern "C" long findframe();
 
-long c5(long x)
+long c4(long x)
 {
-long jill = findframe();
+long hannah4 = 13;
 
-return jill;
+long irene4 = hannah4 - x;
+
+hannah4 = c5(irene4);
+
+return hannah4;
 }
+

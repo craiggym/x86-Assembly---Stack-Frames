@@ -42,6 +42,7 @@ findframe:
   push       r15                                          		;Back up r15
   pushf                                                   		;Back up rflags
 ;---------------------------------------------------------------------------------------------------------------------------
+
 ;===== Back up the state components ===============================================================================
 saveSC 4							;Backing up the State Components
 ;------------------------------------------------------------------------------------------------------------------
@@ -51,23 +52,20 @@ saveSC 4							;Backing up the State Components
 dumpstack 0, 0, 28
 ;========================================================= Loop for displaying rbp ===============================================================================
 mov rbp, r9
-topofloop:
-cmp rbp, 0
-jle outofloop
+;topofloop:
+;cmp rbp, 0
+;jle outofloop
+
 
 mov rax, 0
 mov rdi, hex
 mov rsi, rbp
 call printf
 
-mov rbp, [rbp]
-jmp topofloop
+;mov rbp, [rsp]
+;jmp topofloop
 
-outofloop:
-
-
-mov rbp, rsp
-dumpstack 0, 0, 42
+;outofloop:
 
 
 

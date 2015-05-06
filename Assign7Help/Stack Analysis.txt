@@ -1,0 +1,33 @@
+ +224  00007fff9179b220  0000000000000000	;rbp set by runtime system
+ +216  00007fff9179b218  0000000000000008	;bernice1 = 8
+ +208  00007fff9179b210  0000000000000003	;alice1 = 3
+ +200  00007fff9179b208  0000000000401d87	;next instruction
+ +192  00007fff9179b200  00007fff9179b220	;rbp
+
+ +184  00007fff9179b1f8  0000000000000007	;emily2 = 7
+ +176  00007fff9179b1f0  0000000001cac010	;*danielle2 = new long(-1);
+ +168  00007fff9179b1e8  fffffffffffffffc	;christine2 = -4
+ +160  00007fff9179b1e0  00000000004020b4	;unknown
+ +152  00007fff9179b1d8  0000000000401e3e	;next instruction
+ +144  00007fff9179b1d0  00007fff9179b200	;rbp
+
+ +136  00007fff9179b1c8  ffffffffffffffec	;gina3 = francis3 + x
+ +128  00007fff9179b1c0  fffffffffffffff0	;francis3 = -16
+ +120  00007fff9179b1b8  fffffffffffffffc	;christine2 (was passed from c2)
+ +112  00007fff9179b1b0  00007fff9179b200	;rbp from c2
+ +104  00007fff9179b1a8  0000000000401ecc	;next instruction
+  +96  00007fff9179b1a0  00007fff9179b1d0	;rbp
+
+  +88  00007fff9179b198  0000000000000021	;irene4 = hannah4 - x
+  +80  00007fff9179b190  000000000000000d	;hannah4 = 13
+  +72  00007fff9179b188  ffffffffffffffec	;gina3 (was passed from c3)
+  +64  00007fff9179b180  00007fff9179b300	;*************** Referring to address outside of program stack *************************
+  +56  00007fff9179b178  0000000000401f5a	;next instruction
+  +48  00007fff9179b170  00007fff9179b1a0	;rbp
+
+  +40  00007fff9179b168  00007f15c2746760	;*************** Referring to address outside of program stack *************************
+  +32  00007fff9179b160  0000000000000000	;*************** I'm not sure what this is *********************************************
+  +24  00007fff9179b158  0000000000000021	;irene4 (was passed from c4)
+  +16  00007fff9179b150  00007f15c2c729a0	;*************** Referring to address outside of program stack *************************
+   +8  00007fff9179b148  0000000000401fc7	;next instruction
+   +0  00007fff9179b140  00007fff9179b170	;rbp
